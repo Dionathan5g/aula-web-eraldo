@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white p-8">
+    <div class="max-w-lg mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Formulário de Exemplo</h1>
+        <form class="space-y-4">
+            <fieldset class="border p-4">
+                <legend class="font-semibold">Informações Pessoais</legend>
+                <div class="mb-2">
+                    <label for="nome" class="block">Nome:</label>
+                    <input type="text" id="nome" class="border w-full p-1">
+                </div>
+                <div class="mb-2">
+                    <label for="data-nascimento" class="block">Data de nascimento:</label>
+                    <input type="text" id="data-nascimento" class="border w-full p-1">
+                </div>
+                <div class="mb-2">
+                    <label for="email" class="block">Email:</label>
+                    <input type="email" id="email" class="border w-full p-1">
+                </div>
+                <div class="mb-2">
+                    <label for="senha" class="block">Senha:</label>
+                    <input type="password" id="senha" class="border w-full p-1">
+                </div>
+                <div class="mb-2">
+                    <span class="block">Gênero:</span>
+                    <label class="mr-4">
+                        <input type="radio" name="genero" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="feminino"> Feminino
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="border p-4">
+                <legend class="font-semibold">Mensagem</legend>
+                <div class="mb-2">
+                    <label for="motivo" class="block">Motivo do contato</label>
+                    <select id="motivo" class="border w-full p-1">
+                        <option>Dúvida</option>
+                        <option>Reclamação</option>
+                        <option>Sugestão</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label for="mensagem" class="block">Mensagem:</label>
+                    <textarea id="mensagem" class="border w-full p-1" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="anexo" class="block">Anexo:</label>
+                    <input type="file" id="anexo" class="block">
+                </div>
+                <div class="mb-2">
+                    <label>
+                        <input type="checkbox" id="notificacao"> Aceito receber notificação de resposta
+                    </label>
+                </div>
+            </fieldset>
+            <div class="flex space-x-2">
+                <button type="submit" class="bg-gray-200 border px-4 py-2">Enviar</button>
+                <button type="reset" class="bg-gray-200 border px-4 py-2">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
